@@ -16,16 +16,6 @@ class Person {
   static genericGreet() {
     return "Hello, I am a generic greeting!";
   }
-
-  get fullName() {
-    return `${this.firstName} ${this.lastName}`;
-  }
-
-  set fullName(fullName) {
-    const [firstName, lastName] = fullName.split(" ");
-    this.firstName = firstName;
-    this.lastName = lastName;
-  }
 }
 
 class Student extends Person {
